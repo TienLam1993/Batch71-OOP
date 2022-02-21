@@ -33,6 +33,8 @@ public class Book {
 
   public void setPrices(float prices) {this.prices = prices;}
 
+  public float getPrices() {return this.prices;}
+
   private void setId( int id) {
     this.id = id;
   }
