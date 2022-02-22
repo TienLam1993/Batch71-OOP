@@ -35,7 +35,7 @@ public class Book {
 
   public float getPrices() {return this.prices;}
 
-  private void setId( int id) {
+  private void setId(int id) {
     this.id = id;
   }
 

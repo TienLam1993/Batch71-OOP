@@ -8,7 +8,7 @@ public class CustomerService {
         System.out.println(customers + "\n");
     }
 
-    public  void editCustomer(Scanner sc, List<Customer> customers) {
+    public void editCustomer(Scanner sc, List<Customer> customers) {
 
         this.printCustomerList(customers);
         System.out.println("Enter the id the customer you want to edit!");
@@ -18,18 +18,19 @@ public class CustomerService {
             System.out.println("Id is out of range");
             id = Utilities.getInt(sc);
         }
-        Customer selectedCustomer = customers.get(id-1);
+        Customer selectedCustomer = customers.get(id - 1);
         System.out.println("You are going to edit customer: " + selectedCustomer.toString() + "\n");
         System.out.println("Enter the new name of the customer! Leave blank if you want to keep the old name");
         sc.nextLine();
         String newName = sc.nextLine();
-        if(!newName.equals("")) selectedCustomer.setName(newName);
+        if (!newName.equals("")) selectedCustomer.setName(newName);
         System.out.println("Enter new address of the customer! Leave blank if you want to keep the old address");
         String newAddress = sc.nextLine();
-        if(!newAddress.equals("")) selectedCustomer.setAddress(newAddress);
+        if (!newAddress.equals("")) selectedCustomer.setAddress(newAddress);
         System.out.println("Edit successful! \n");
         this.printCustomerList(customers);
     }
+
     public void addCustomers(Scanner sc, List<Customer> customers) {
 
         System.out.println("Enter the name of the new customer!");
@@ -51,7 +52,7 @@ public class CustomerService {
             System.out.println("Id is out of range");
             id = Utilities.getInt(sc);
         }
-        customers.remove(id-1);
+        customers.remove(id - 1);
         System.out.println("Remove customer successful!\n");
         this.printCustomerList(customers);
 

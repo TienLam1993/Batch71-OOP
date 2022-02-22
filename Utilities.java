@@ -7,7 +7,7 @@ public class Utilities {
             System.out.println("Please enter a integer");
             sc.next();
         }
-        return  sc.nextInt();
+        return sc.nextInt();
     }
 
     public static float getFloat(Scanner sc) {
@@ -15,7 +15,7 @@ public class Utilities {
             System.out.println("Please enter a float");
             sc.next();
         }
-        return  sc.nextFloat();
+        return sc.nextFloat();
     }
 
 }
